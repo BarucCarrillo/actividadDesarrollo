@@ -78,6 +78,33 @@ h2{
         display: block;
     }
 }
+
+.search{
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search input[type="text"]{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search button{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
 a:hover{
     color: darkgreen;
 }
