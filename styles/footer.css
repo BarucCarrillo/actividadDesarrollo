@@ -1,0 +1,84 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.info {
+    text-align: justify;
+    margin: 5%;
+    line-height: 3rem;
+}
+
+.info ul{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:rgb(0, 0, 0);
+    font-size:1.0em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+    
+.footer .row a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    transition:0.5s;
+}
+    
+.footer .row ul{
+    width:100%;
+}
+    
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+    
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+    
+@media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+}
+    

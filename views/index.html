@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <h1>AROMAS</h1>
+        <nav class="nav-container">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul class="menu" id="menu">
+                <li>
+                    <a href="/views/index.html">Inicio</a>
+                    <ul class="submenu">
+                        <li><a href="/views/construccion.html">Opción 1</a></li>
+                        <li><a href="/views/construccion.html">Opción 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/views/ofertas.html">Ofertas</a>
+                    <ul class="submenu">
+                        <li><a href="/views/construccion.html">Opción 1</a></li>
+                        <li><a href="/views/construccion.html">Opción 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/views/productosNuevos.html">Novedades</a>
+                    <ul class="submenu">
+                        <li><a href="/views/construccion.html">Opción 1</a></li>
+                        <li><a href="/views/construccion.html">Opción 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/views/damas.html">Damas</a>
+                    <ul class="submenu">
+                        <li><a href="/views/construccion.html">Opción 1</a></li>
+                        <li><a href="/views/construccion.html">Opción 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/views/caballeros.html">Caballeros</a>
+                    <ul class="submenu">
+                        <li><a href="/views/construccion.html">Opción 1</a></li>
+                        <li><a href="/views/construccion.html">Opción 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="bread">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+                </ol>
+            </nav>  
+        </div>
+             
+
+        <script>
+            function toggleMenu() {
+                document.getElementById("menu").classList.toggle("active");
+            }
+        </script>
+    </header>
+
+    <div class="banner">
+        <video src="/vid/banner.mp4" autoplay muted loop controls width="100%" height="100%"></video>
+    </div>
+    
+    <section class="nuevo">
+        <h2>LO MÁS NUEVO</h2>
+        <h3>Descubre los nuevos lanzamientos que tenemos para ti.</h3>
+        <table>
+            <tr>
+              <td><a href="#"><img src="https://www.sephora.com.mx/on/demandware.static/-/Sites-masterCatalog_Sephora/es_MX/dwdd71f349/images/hi-res/eau-de-parfum-armani-giorgio-armani-acqua-di-gi-pour-homme-profondo-eau-de-parfum3614272865235A.jpg" alt="" style="width: 100%; height: 100%;"></a></td>
+              <td><a href="#"><img src="https://rawnaq.ps/wp-content/uploads/2022/09/Stronger-With-You-Intensely-Giorgio-Armani.jpg" alt="" style="width: 100%; height: 100%;"></a></td>
+              <td><a href="#"><img src="https://m.media-amazon.com/images/I/61IpDv3hNRL._SL1500_.jpg" alt="" style="width: 100%; height: 100%;"></a></td>
+            </tr>
+          </table>
+    </section>
+
+    <section class="perfArabe">
+        <h2>PERFUMES ÁRABES</h2>
+        <h3>Descubre aromas de el otro lado del mundo.</h3>
+        <table class="tabla">
+            <tr>
+              <td><a href="#"><img src="https://www.bloomingcorner.gr/wp-content/uploads/2023/12/lattafakhamrahqahwaedp100ml.png" alt="" style="width: 100%; height: 100%;"></a></td>
+              <td><a href="#"><img src="https://www.perfumenz.co.nz/cdn/shop/files/afnan-9am-dive_1024x1024.png?v=1698444644" alt="" style="width: 100%; height: 100%;"></a></td>
+              <td><a href="#"><img src="https://www.intenseoud.com/cdn/shop/files/hawasice_6_1024x1024.png?v=1698343670" alt="" style="width: 100%; height: 100%;"></a></td>
+            </tr>
+          </table>
+    </section>
+
+    <footer id="footer">
+        <div class="footer">
+        <div class="row">
+            <ul>
+                <ul>
+                    <li><a href="/viewsFooter/politica.html#contacto">Contacto</a></li>
+                    <li><a href="/viewsFooter/privacidad.html">Privacidad</a></li>
+                    <li><a href="/viewsFooter/politica.html">Politica de Empresa</a></li>
+                    <li><a href="/viewsFooter/terminos.html">Terminos y Condiciones</a></li>
+                    <li><a href="/viewsFooter/carrera.html">Carrera</a></li>
+                </ul>
+            </ul>
+        </div>
+            
+        <div class="row">
+        AROMAS Copyright © 2025 AROMAS - All rights reserved || Designed By: Baruc 
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
