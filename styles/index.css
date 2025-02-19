@@ -138,6 +138,11 @@ table {
 }
 
 
+#id {
+    display: flex;
+    justify-content: center;
+}
+
 .footer .row{
     width:100%;
     margin:1% 0%;
@@ -146,6 +151,8 @@ table {
     font-size:1.0em;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
 }
     
 .footer .row a{
