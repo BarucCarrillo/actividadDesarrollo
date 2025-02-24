@@ -1,4 +1,3 @@
-
 .nav-container {
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -200,4 +199,32 @@ table {
     .footer .row a i {
         margin: 0% 3%;
     }
+}
+
+
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* Agregar estilo a las celdas */
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Estilo adicional para los títulos */
+strong {
+    font-size: 1.2em;
+}
+
+/* Estilo para las listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
 }
