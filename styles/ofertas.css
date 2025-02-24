@@ -1,4 +1,8 @@
-
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+}
 
 .desarrollo{
     margin: 5rem;
