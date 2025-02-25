@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/comentario.css">
     <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
     <title>Inicio</title>
 </head>
 <body>
@@ -58,15 +63,7 @@
                         </form>
                     </div> 
                 </li>
-                <li> 
-                 <button onclick="window.location.href='/views/Formulario.html';" class="btn btn-outline-dark">
-                    Iniciar Sesión
-                </button>
-            </li>   
             </ul>
-
-        
-            
         </nav>
 
         
@@ -76,6 +73,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+                  <li class="breadcrumb-item active" aria-current="page">Iniciar Sesion</li>
                 </ol>
             </nav>  
         </div>
@@ -87,76 +85,43 @@
             }
         </script>
     </header>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h4 class="mb-3">Iniciar sesion</h4>
+                    <form>
 
-    <div class="banner">
-        <video src="/vid/banner.mp4" autoplay muted loop controls width="100%" height="100%"></video>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Nombre de Usuario</label>
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="username" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Contraseña</label>
+                            <input type="email" class="form-control" id="email" placeholder="">
+                        </div>
+
+
+                       
+
+                        <button class="btn btn-primary w-100" type="submit">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <section class="nuevo">
-        <h2>LO MÁS NUEVO</h2>
-        <h3>Descubre los nuevos lanzamientos que tenemos para ti.</h3>
-        <table>
-            <tr>
-              <td><a href="#"><img src="https://www.sephora.com.mx/on/demandware.static/-/Sites-masterCatalog_Sephora/es_MX/dwdd71f349/images/hi-res/eau-de-parfum-armani-giorgio-armani-acqua-di-gi-pour-homme-profondo-eau-de-parfum3614272865235A.jpg" alt="" style="width: 100%; height: 100%;"></a></td>
-              <td><a href="#"><img src="https://rawnaq.ps/wp-content/uploads/2022/09/Stronger-With-You-Intensely-Giorgio-Armani.jpg" alt="" style="width: 100%; height: 100%;"></a></td>
-              <td><a href="#"><img src="https://m.media-amazon.com/images/I/61IpDv3hNRL._SL1500_.jpg" alt="" style="width: 100%; height: 100%;"></a></td>
-            </tr>
-          </table>
-    </section>
 
-    <section class="perfArabe">
-        <h2>PERFUMES ÁRABES</h2>
-        <h3>Descubre aromas de el otro lado del mundo.</h3>
-        <table class="tabla">
-            <tr>
-              <td><a href="#"><img src="https://www.bloomingcorner.gr/wp-content/uploads/2023/12/lattafakhamrahqahwaedp100ml.png" alt="" style="width: 100%; height: 100%;"></a></td>
-              <td><a href="#"><img src="https://www.perfumenz.co.nz/cdn/shop/files/afnan-9am-dive_1024x1024.png?v=1698444644" alt="" style="width: 100%; height: 100%;"></a></td>
-              <td><a href="#"><img src="https://www.intenseoud.com/cdn/shop/files/hawasice_6_1024x1024.png?v=1698343670" alt="" style="width: 100%; height: 100%;"></a></td>
-            </tr>
-          </table>
-    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 
     <footer id="footer">
-
-        <!-- Caja de comentarios -->
-
-        <div class="seccioncomentario">
-
-            <h2 class="titulocomentario">Contáctenos</h2>
-
-            <br><br>
-
-            <form class="nombrecomentario">
-                <h3 class="entcomentario">Nombre*</h3>
-                <div class="form-group">
-                    <textarea class="form-control" rows="1"></textarea>
-                </div>
-            </form>
-
-            <br><br>
-
-            <form class="nombrecomentario">
-                <h3 class="entcomentario">Correo electrónico*</h3>
-                <div class="form-group">
-                    <textarea class="form-control" rows="1"></textarea>
-                </div>
-            </form>
-
-            <br><br>
-
-            <form class="cajacomentario">
-                <h3 class="entcomentario">Ingrese un comentario*</h3>
-                <div class="form-group">
-                <textarea class="form-control" rows="5"></textarea>
-                </div>
-                <br>
-                <button type="submit" class="btn btn-primary">Enviar comentario</button>
-            </form>
-
-        </div>
-
-    <!-- Fin caja de comentarios -->
-
         <div class="footer">
         <div class="row">
             <ul>
@@ -166,7 +131,6 @@
                     <li><a href="/viewsFooter/politica.html">Politica de Empresa</a></li>
                     <li><a href="/viewsFooter/terminos.html">Terminos y Condiciones</a></li>
                     <li><a href="/viewsFooter/carrera.html">Carrera</a></li>
-                    <li><a href="/viewsFooter/menusitio.html">Menu de Sitio</a></li>
                 </ul>
             </ul>
         </div>
@@ -179,9 +143,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
-    <!-- Script caja de comentarios -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Fin script caja de comentarios -->
 </body>
 </html>
