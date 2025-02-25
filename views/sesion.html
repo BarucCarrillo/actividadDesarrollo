@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/styles/ofertas.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/comentario.css">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <title>Ofertas</title>
+    <title>Inicio</title>
 </head>
 <body>
     <header>
@@ -60,21 +59,27 @@
                     </div> 
                 </li>
                 <li> 
-                    <button onclick="window.location.href='/views/Formulario.html';" class="btn btn-outline-dark">
-                        Registro
-                    </button>
-                </li>
+                 <button onclick="window.location.href='/views/Formulario.html';" class="btn btn-outline-dark">
+                    Iniciar Sesión
+                </button>
+            </li>   
             </ul>
+
+        
+            
         </nav>
+
+        
+
         
         <div class="bread">
-            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="/views/index.html">Inicio</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Ofertas</li>
+                  <li class="breadcrumb-item active" aria-current="page">Inicio</li>
                 </ol>
-            </nav>
+            </nav>  
         </div>
+             
 
         <script>
             function toggleMenu() {
@@ -82,36 +87,37 @@
             }
         </script>
     </header>
-    
-    <div class="tablaOfertas">
-        <table>
-            <tbody>
-                <script>
-                    let images = [
-                        "https://th.bing.com/th/id/OIP.5u2wlpsS2eUWiqjGIcsUMwHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.lHqBcn6EAD8HGNK1DYTTCwHaHa?pid=ImgDet&w=161&h=157.1298076923077&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.lyO-1WdyFu06BfeOxg8PXQAAAA?pid=ImgDet&w=161&h=161.4035087719298&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.Jt3Q6Ekc7l0g65tO9nV8SwHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", 
-                        "https://th.bing.com/th/id/OIP.iuaO0CKRGl6h1pHRQkYhWQHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.h6aQ9_fKrEZuWxeE1DjUgwHaHa?pid=ImgDet&w=161&h=141.2280701754386&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.U89N29oNgtH-4EVMblb1LAHaHa?pid=ImgDet&w=161&h=155.526&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.u8S2J6quJHV2GmhMVCZUbAHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", 
-                        "https://th.bing.com/th/id/OIP.Bssah-cUAo7npOLHifMomAHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.zXAnYPr0t29yV-sD2Kq8RgHaHa?pid=ImgDet&w=161&h=154.882&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.9ndgWJOb2HBQPaK0j_EKTwHaHa?pid=ImgDet&w=161&h=152.95000000000002&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.78fqWvlCcJTcKc-HuKrO5wHaGv?pid=ImgDet&w=161&h=161&c=7&dpr=1.5"
-                    ];
-                    let texts = [
-                        "Nautica Voyage", "Montblanc Legend Spirit", "Versace The Dreamer", "Calvin Klein Eternity", 
-                        "Halloween", "Versace Bright Crystal", "Benetton United Dreams", "Guess 1981 Indigo", 
-                        "Davidoff Cool Water", "Afnan 9 AM", "Afnan Odyssey Mega", "Lacoste Blanc"
-                    ];
-                    let count = 0;
-                    for (let i = 0; i < 3; i++) {
-                        document.write('<tr>');
-                        for (let j = 0; j < 4; j++) {
-                            document.write(`<td><img src="${images[count]}" alt="Imagen ${count+1}"><br><a href="/views/construccion.html">${texts[count]}</a></td>`);
-                            count++;
-                        }
-                        document.write('</tr>');
-                    }
-                </script>
-            </tbody>
-        </table>
-    </div>
 
-    <footer>
+    <div class="banner">
+        <video src="/vid/banner.mp4" autoplay muted loop controls width="100%" height="100%"></video>
+    </div>
+    
+    <section class="nuevo">
+        <h2>LO MÁS NUEVO</h2>
+        <h3>Descubre los nuevos lanzamientos que tenemos para ti.</h3>
+        <table>
+            <tr>
+              <td><a href="#"><img src="https://www.sephora.com.mx/on/demandware.static/-/Sites-masterCatalog_Sephora/es_MX/dwdd71f349/images/hi-res/eau-de-parfum-armani-giorgio-armani-acqua-di-gi-pour-homme-profondo-eau-de-parfum3614272865235A.jpg" alt="" style="width: 100%; height: 100%;"></a></td>
+              <td><a href="#"><img src="https://rawnaq.ps/wp-content/uploads/2022/09/Stronger-With-You-Intensely-Giorgio-Armani.jpg" alt="" style="width: 100%; height: 100%;"></a></td>
+              <td><a href="#"><img src="https://m.media-amazon.com/images/I/61IpDv3hNRL._SL1500_.jpg" alt="" style="width: 100%; height: 100%;"></a></td>
+            </tr>
+          </table>
+    </section>
+
+    <section class="perfArabe">
+        <h2>PERFUMES ÁRABES</h2>
+        <h3>Descubre aromas de el otro lado del mundo.</h3>
+        <table class="tabla">
+            <tr>
+              <td><a href="#"><img src="https://www.bloomingcorner.gr/wp-content/uploads/2023/12/lattafakhamrahqahwaedp100ml.png" alt="" style="width: 100%; height: 100%;"></a></td>
+              <td><a href="#"><img src="https://www.perfumenz.co.nz/cdn/shop/files/afnan-9am-dive_1024x1024.png?v=1698444644" alt="" style="width: 100%; height: 100%;"></a></td>
+              <td><a href="#"><img src="https://www.intenseoud.com/cdn/shop/files/hawasice_6_1024x1024.png?v=1698343670" alt="" style="width: 100%; height: 100%;"></a></td>
+            </tr>
+          </table>
+    </section>
+
+    <footer id="footer">
+
         <!-- Caja de comentarios -->
 
         <div class="seccioncomentario">
@@ -173,10 +179,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    
+
     <!-- Script caja de comentarios -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Fin script caja de comentarios -->
-
 </body>
 </html>

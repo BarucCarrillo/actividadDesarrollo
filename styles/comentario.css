@@ -1,0 +1,25 @@
+.seccioncomentario{
+    height: auto;
+    width: 60%;
+}
+
+.cajacomentario{
+    margin-left: 10%;
+}
+
+.nombrecomentario{
+    margin-left: 10%;
+}
+
+.titulocomentario{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 10%;
+}
+
+.entcomentario{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bolder;
+}
