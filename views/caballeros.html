@@ -35,15 +35,15 @@
                 <li>
                     <a href="/views/damas.html">Damas</a>
                     <ul class="submenu">
-                        <li><a href="/views/construccion.html">Calvin Klein Beauty</a></li>
-                        <li><a href="/views/construccion.html">Miss Dior</a></li>
+                        <li><a href="/viewsPerfumes/kal-klein.html">Calvin Klein Beauty</a></li>
+                        <li><a href="/viewsPerfumes/miss-dior.html">Miss Dior</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="/views/caballeros.html">Caballeros</a>
                     <ul class="submenu">
-                        <li><a href="/views/construccion.html">Hawa ICE</a></li>
-                        <li><a href="/views/construccion.html">Stronger With You Intensely</a></li>
+                        <li><a href="/viewsPerfumes/hawa-ice.html">Hawa ICE</a></li>
+                        <li><a href="/viewsPerfumes/str-with.html">Stronger With You Intensely</a></li>
                     </ul>
                 </li>
                 <li>
@@ -94,10 +94,16 @@
                         "https://th.bing.com/th/id/OIP.4Y4rjpuFeval6pCHy_7bXgHaHa?pid=ImgDet&w=180&h=180&c=7", "https://th.bing.com/th/id/OIP.zXAnYPr0t29yV-sD2Kq8RgHaHa?pid=ImgDet&w=174.23999999999998&h=180&c=7", "https://th.bing.com/th/id/OIP.OWFEOQxIy8fSzokpd_912wHaHG?pid=ImgDet&w=180&h=180&c=7", "https://th.bing.com/th/id/OIP.-sf4yiUsdFiv4cDRMhaDjwHaHa?pid=ImgDet&w=180&h=180&c=7"
                     ];
                     let texts = [
-                        "Giorgio Armani Acqua Di Gio Profondo", "Hawa ICE", "Versace Pour Homme", "YSL MYSEFL", 
+                        "Giorgio Armani Acqua Di Gio Profondo", "Hawas ICE", "Versace Pour Homme", "YSL MYSEFL", 
                         "Loewe Paula's Ibiza", "Tom Ford Vanilla Sex", "JPG Le Beau Paradaise Garden ", "Estée Lauder Tender Light", 
                         "Jo Malone London Frangipani", "Kilian Paris Sunkissed Goddess", "Gucci The Alchemist’s Garden", "Chanel Comète Les Exclusifs",
                         "Lattafa Khamrah Qahwa", "Afnan 9AM", "Emporio Armani Stronger With You Intensely", "Viktor Rolf Spicebomb Extreme"
+                    ];
+                    let viewsPer = [
+                    "views/construccion.html", "/viewsPerfumes/hawa-ice.html", "/viewsPerfumes/ver-cryst.html", "/viewsPerfumes/myslf.html",
+                    "views/construccion.html", "views/construccion.html", "/viewsPerfumes/bvl-alle.html", "views/construccion.html",
+                    "views/construccion.html", "views/construccion.html", "/views/construccion.html", "views/construccion.html",
+                    "views/construccion.html", "views/construccion.html", "/views/construccion.html", "views/construccion.html",
                     ];
                     let precio = [
                         "$2,800 MXN", "$1,900 MXN", "$1,300 MXN", "$2,800 MXN", 
@@ -109,7 +115,7 @@
                     for (let i = 0; i < 4; i++) {
                         document.write('<tr>');
                         for (let j = 0; j < 4; j++) {
-                            document.write(`<td><img src="${images[count]}" alt="Imagen ${count+1}"><br><a href="/views/construccion.html">${texts[count]}</a><br><p>${precio[count]}</p><td>`);
+                            document.write(`<td><img src="${images[count]}" alt="Imagen ${count+1}"><br><a href="${viewsPer[count]}">${texts[count]}</a><br><p>${precio[count]}</p><td>`);
                             count++;
                         }
                         document.write('</tr>');

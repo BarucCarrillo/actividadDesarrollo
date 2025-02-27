@@ -36,15 +36,15 @@
                 <li>
                     <a href="/views/damas.html">Damas</a>
                     <ul class="submenu">
-                        <li><a href="/views/construccion.html">Calvin Klein Beauty</a></li>
-                        <li><a href="/views/construccion.html">Miss Dior</a></li>
+                        <li><a href="/viewsPerfumes/kal-klein.html">Calvin Klein Beauty</a></li>
+                        <li><a href="/viewsPerfumes/miss-dior.html">Miss Dior</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="/views/caballeros.html">Caballeros</a>
                     <ul class="submenu">
-                        <li><a href="/views/construccion.html">Hawa ICE</a></li>
-                        <li><a href="/views/construccion.html">Stronger With You Intensely</a></li>
+                        <li><a href="/viewsPerfumes/hawa-ice.html">Hawa ICE</a></li>
+                        <li><a href="/viewsPerfumes/str-with.html">Stronger With You Intensely</a></li>
                     </ul>
                 </li>
                 <li>
@@ -98,11 +98,16 @@
                         "Halloween", "Versace Bright Crystal", "Benetton United Dreams", "Guess 1981 Indigo", 
                         "Davidoff Cool Water", "Afnan 9 AM", "Afnan Odyssey Mega", "Lacoste Blanc"
                     ];
+                    let viewsPerfumes = [
+                        "/viewsPerfumes/nau-voy.html", "/viewsPerfumes/mont-lege.html", "/viewsPerfumes/ver-drea.html", "/viewsPerfumes/kal-eter.html", 
+                        "/viewsPerfumes/hal.html", "/viewsPerfumes/ver-cryst.html", "/viewsPerfumes/ben-uni.html", "/viewsPerfumes/gue-1981.html", 
+                        "/viewsPerfumes/dav-cool.html", "/viewsPerfumes/afn-9am.html", "/viewsPerfumes/afn-mega.html", "/viewsPerfumes/lac-blanc.html"
+                    ];
                     let count = 0;
                     for (let i = 0; i < 3; i++) {
                         document.write('<tr>');
                         for (let j = 0; j < 4; j++) {
-                            document.write(`<td><img src="${images[count]}" alt="Imagen ${count+1}"><br><a href="/views/construccion.html">${texts[count]}</a></td>`);
+                            document.write(`<td><img src="${images[count]}" alt="Imagen ${count+1}"><br><a href="${viewsPerfumes[count]}">${texts[count]}</a></td>`);
                             count++;
                         }
                         document.write('</tr>');

@@ -36,15 +36,15 @@
                 <li>
                     <a href="/views/damas.html">Damas</a>
                     <ul class="submenu">
-                        <li><a href="/views/construccion.html">Calvin Klein Beauty</a></li>
-                        <li><a href="/views/construccion.html">Miss Dior</a></li>
+                        <li><a href="/viewsPerfumes/kal-klein.html">Calvin Klein Beauty</a></li>
+                        <li><a href="/viewsPerfumes/miss-dior.html">Miss Dior</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="/views/caballeros.html">Caballeros</a>
                     <ul class="submenu">
-                        <li><a href="/views/construccion.html">Hawa ICE</a></li>
-                        <li><a href="/views/construccion.html">Stronger With You Intensely</a></li>
+                        <li><a href="/viewsPerfumes/hawa-ice.html">Hawa ICE</a></li>
+                        <li><a href="/viewsPerfumes/str-with.html">Stronger With You Intensely</a></li>
                     </ul>
                 </li>
                 <li>
@@ -100,6 +100,12 @@
                         "Jo Malone London Frangipani", "Kilian Paris Sunkissed Goddess", " Gucci The Alchemist’s Garden", "Chanel Comète Les Exclusifs",
                         "Hallowen", "Guess 1981 Indigo", "Benetton United Dreames", "Miss Dior"
                     ];
+                    let viewsPer = [
+                        "/viewsPerfumes/kal-klein.html", "views/construccion.html", "/viewsPerfumes/ver-cryst.html", "views/construccion.html",
+                        "views/construccion.html", "views/construccion.html", "/viewsPerfumes/bvl-alle.html", "views/construccion.html",
+                        "views/construccion.html", "views/construccion.html", "/views/construccion.html", "views/construccion.html",
+                        "views/construccion.html", "views/construccion.html", "/views/construccion.html", "/viewsPerfumes/miss-dior.html",
+                    ];
                     let precio = [
                         "$799.99 MXN", "$1,100.00 MXN", "$1,300 MXN", "$5,600 MXN", 
                         "$4,600.00 MXN", "$6,000 MXN", "$3,200 MXN", "$3,200 MXN", 
@@ -110,7 +116,7 @@
                     for (let i = 0; i < 4; i++) {
                         document.write('<tr>');
                         for (let j = 0; j < 4; j++) {
-                            document.write(`<td><img src="${images[count]}" alt="Imagen ${count+1}"><br><a href="/views/construccion.html">${texts[count]}</a><br><p>${precio[count]}</p></td>`);
+                            document.write(`<td><img src="${images[count]}" alt="Imagen ${count+1}"><br><a href="${viewsPer[count]}">${texts[count]}</a><br><p>${precio[count]}</p></td>`);
                             count++;
                         }
                         document.write('</tr>');
