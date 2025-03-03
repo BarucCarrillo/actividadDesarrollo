@@ -97,11 +97,16 @@
                         "Loewe Paula's Ibiza", "Tom Ford Vanilla Sex", "Bvlgari Allegra Chill & Sole", "Estée Lauder Tender Light", 
                         "Jo Malone London Frangipani", "Kilian Paris Sunkissed Goddess", "Gucci The Alchemist’s Garden", "Chanel Comète Les Exclusifs"
                     ];
+                    let viewsPerfumes=[
+                        "/viewsPerfumes/jpg-le-beau.html", "/viewsPerfumes/myslf.html", "/viewsPerfumes/ver-pour.html", "/viewsPerfumes/dior-new.html",
+                        "/viewsPerfumes/loewe-paula.html", "/viewsPerfumes/tom-vanilla.html", "/viewsPerfumes/bvl-alle.html", "/viewsPerfumes/est-tender.html",
+                        "/viewsPerfumes/jo-malone.html", "/viewsPerfumes/kil-sunkissed.html", "/viewsPerfumes/guc-alchemist.html", "/viewsPerfumes/chan-comete.html"
+                    ];
                     let count = 0;
                     for (let i = 0; i < 3; i++) {
                         document.write('<tr>');
                         for (let j = 0; j < 4; j++) {
-                            document.write(`<td><img src="${images[count]}" alt="Imagen ${count+1}"><br><a href="/views/construccion.html">${texts[count]}</a></td>`);
+                            document.write(`<td><img src="${images[count]}" alt="Imagen ${count+1}"><br><a href="${viewsPerfumes[count]}">${texts[count]}</a></td>`);
                             count++;
                         }
                         document.write('</tr>');
