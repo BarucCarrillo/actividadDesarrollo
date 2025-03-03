@@ -89,33 +89,24 @@
                 <script>
                     let images = [
                         "https://th.bing.com/th/id/OIP.dhbfEUp0uinALsyTBjmtwgHaHa?pid=ImgDet&w=180&h=180&c=7", "https://th.bing.com/th/id/OIP.lIkC47te0pFsKlxqGzpQHAHaJG?pid=ImgDet&w=180&h=180&c=7", "https://th.bing.com/th/id/OIP.R_fXodyYYr62ZdqFwSROQAHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.n2UflBLld0BXXOxXRqsOLgHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", 
-                        "https://th.bing.com/th/id/OIP.QgJlrFnK9ZyOJgFdfgKFsAHaH5?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.8j15RKMwk4tbLBLQcQkMHwHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.LEIhyXMQSWEV4YVCtfVh2wHaJi?pid=ImgDet&w=139.68&h=180&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.FpO6XMOayx0awfUxa8THCQAAAA?pid=ImgDet&w=150&h=180&c=7&dpr=1.5", 
-                        "https://th.bing.com/th/id/OIP.L5bxAkO3-qf1UqZFHNf9GgAAAA?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP._RwLffPp3kOvvj0zbnkkuQHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.o4wTKezQaHlgh3t7fuwihAHaIb?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.vMwDs0cpQ_u9acGeaDM6WAHaHa?pid=ImgDet&w=135&h=180&c=7&dpr=1.5",
+                        "https://th.bing.com/th/id/OIP.QgJlrFnK9ZyOJgFdfgKFsAHaH5?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.8j15RKMwk4tbLBLQcQkMHwHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.LEIhyXMQSWEV4YVCtfVh2wHaJi?pid=ImgDet&w=139.68&h=180&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.FpO6XMOayx0awfUxa8THCQAAAA?pid=ImgDet&w=150&h=180&c=7&dpr=1.5",
                         "https://th.bing.com/th/id/OIP.4Y4rjpuFeval6pCHy_7bXgHaHa?pid=ImgDet&w=180&h=180&c=7", "https://th.bing.com/th/id/OIP.zXAnYPr0t29yV-sD2Kq8RgHaHa?pid=ImgDet&w=174.23999999999998&h=180&c=7", "https://th.bing.com/th/id/OIP.OWFEOQxIy8fSzokpd_912wHaHG?pid=ImgDet&w=180&h=180&c=7", "https://th.bing.com/th/id/OIP.-sf4yiUsdFiv4cDRMhaDjwHaHa?pid=ImgDet&w=180&h=180&c=7"
                     ];
                     let texts = [
                         "Giorgio Armani Acqua Di Gio Profondo", "Hawas ICE", "Versace Pour Homme", "YSL MYSEFL", 
                         "Loewe Paula's Ibiza", "Tom Ford Vanilla Sex", "JPG Le Beau Paradaise Garden ", "Estée Lauder Tender Light", 
-                        "Jo Malone London Frangipani", "Kilian Paris Sunkissed Goddess", "Gucci The Alchemist’s Garden", "Chanel Comète Les Exclusifs",
                         "Lattafa Khamrah Qahwa", "Afnan 9AM", "Emporio Armani Stronger With You Intensely", "Viktor Rolf Spicebomb Extreme"
                     ];
                     let viewsPer = [
-                    "views/construccion.html", "/viewsPerfumes/hawa-ice.html", "/viewsPerfumes/ver-cryst.html", "/viewsPerfumes/myslf.html",
-                    "views/construccion.html", "views/construccion.html", "/viewsPerfumes/bvl-alle.html", "views/construccion.html",
-                    "views/construccion.html", "views/construccion.html", "/views/construccion.html", "views/construccion.html",
-                    "views/construccion.html", "views/construccion.html", "/views/construccion.html", "views/construccion.html",
-                    ];
-                    let precio = [
-                        "$2,800 MXN", "$1,900 MXN", "$1,300 MXN", "$2,800 MXN", 
-                        "$4,600.00 MXN", "$6,000 MXN", "$3,200 MXN", "$3,200 MXN", 
-                        "$2,500 MXN", "$6,000 MXN", "$6,900 MXN", "$5,000 MXN",
-                        "$900 MXN", "$600 MXN", "$3,200 MXN", "$3,200 MXN",
+                    "/viewsPerfumes/acqua.html", "/viewsPerfumes/hawa-ice.html", "/viewsPerfumes/ver-pour.html", "/viewsPerfumes/myslf.html",
+                    "/viewsPerfumes/loewe-paula.html", "/viewsPerfumes/tom-vanilla.html", "/viewsPerfumes/jpg-le-beau.html", "/viewsPerfumes/est-tender.html",
+                    "/viewsPerfumes/qahwa.html", "/viewsPerfumes/9am.html", "/viewsPerfumes/str-with.html", "/viewsPerfumes/vik.html",
                     ];
                     let count = 0;
-                    for (let i = 0; i < 4; i++) {
+                    for (let i = 0; i < 3; i++) {
                         document.write('<tr>');
                         for (let j = 0; j < 4; j++) {
-                            document.write(`<td><img src="${images[count]}" alt="Imagen ${count+1}"><br><a href="${viewsPer[count]}">${texts[count]}</a><br><p>${precio[count]}</p><td>`);
+                            document.write(`<td><img src="${images[count]}" alt="Imagen ${count+1}"><br><a href="${viewsPer[count]}">${texts[count]}</a><td>`);
                             count++;
                         }
                         document.write('</tr>');

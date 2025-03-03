@@ -90,21 +90,18 @@
                 <script>
                     let images = [
                         "https://th.bing.com/th/id/OIP.5u2wlpsS2eUWiqjGIcsUMwHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.lHqBcn6EAD8HGNK1DYTTCwHaHa?pid=ImgDet&w=161&h=157.1298076923077&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.lyO-1WdyFu06BfeOxg8PXQAAAA?pid=ImgDet&w=161&h=161.4035087719298&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.Jt3Q6Ekc7l0g65tO9nV8SwHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", 
-                        "https://th.bing.com/th/id/OIP.iuaO0CKRGl6h1pHRQkYhWQHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.h6aQ9_fKrEZuWxeE1DjUgwHaHa?pid=ImgDet&w=161&h=141.2280701754386&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.U89N29oNgtH-4EVMblb1LAHaHa?pid=ImgDet&w=161&h=155.526&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.u8S2J6quJHV2GmhMVCZUbAHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", 
-                        "https://th.bing.com/th/id/OIP.Bssah-cUAo7npOLHifMomAHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.zXAnYPr0t29yV-sD2Kq8RgHaHa?pid=ImgDet&w=161&h=154.882&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.9ndgWJOb2HBQPaK0j_EKTwHaHa?pid=ImgDet&w=161&h=152.95000000000002&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.78fqWvlCcJTcKc-HuKrO5wHaGv?pid=ImgDet&w=161&h=161&c=7&dpr=1.5"
+                        "https://th.bing.com/th/id/OIP.dTLcQoCNL--MJE_lp9SkAAAAAA?pid=ImgDet&w=180&h=180&c=7", "https://th.bing.com/th/id/OIP.h6aQ9_fKrEZuWxeE1DjUgwHaHa?pid=ImgDet&w=161&h=141.2280701754386&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.U89N29oNgtH-4EVMblb1LAHaHa?pid=ImgDet&w=161&h=155.526&c=7&dpr=1.5", "https://th.bing.com/th/id/OIP.u8S2J6quJHV2GmhMVCZUbAHaHa?pid=ImgDet&w=161&h=161&c=7&dpr=1.5"
                     ];
                     let texts = [
                         "Nautica Voyage", "Montblanc Legend Spirit", "Versace The Dreamer", "Calvin Klein Eternity", 
-                        "Halloween", "Versace Bright Crystal", "Benetton United Dreams", "Guess 1981 Indigo", 
-                        "Davidoff Cool Water", "Afnan 9 AM", "Afnan Odyssey Mega", "Lacoste Blanc"
+                        "Halloween", "Versace Bright Crystal", "Benetton United Dreams", "Guess 1981 Indigo"
                     ];
                     let viewsPerfumes = [
                         "/viewsPerfumes/nau-voy.html", "/viewsPerfumes/mont-lege.html", "/viewsPerfumes/ver-drea.html", "/viewsPerfumes/kal-eter.html", 
-                        "/viewsPerfumes/hal.html", "/viewsPerfumes/ver-cryst.html", "/viewsPerfumes/ben-uni.html", "/viewsPerfumes/gue-1981.html", 
-                        "/viewsPerfumes/dav-cool.html", "/viewsPerfumes/afn-9am.html", "/viewsPerfumes/afn-mega.html", "/viewsPerfumes/lac-blanc.html"
+                        "/viewsPerfumes/hal.html", "/viewsPerfumes/ver-cryst.html", "/viewsPerfumes/ben-uni.html", "/viewsPerfumes/gue-1981.html"
                     ];
                     let count = 0;
-                    for (let i = 0; i < 3; i++) {
+                    for (let i = 0; i < 2; i++) {
                         document.write('<tr>');
                         for (let j = 0; j < 4; j++) {
                             document.write(`<td><img src="${images[count]}" alt="Imagen ${count+1}"><br><a href="${viewsPerfumes[count]}">${texts[count]}</a></td>`);

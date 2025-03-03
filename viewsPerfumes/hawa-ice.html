@@ -1,194 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/comentario.css">
-    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/comentario.css" />
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Hawas ICE</title>
     <style>
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            margin-top: 5%;
-            margin-bottom: 5%;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .price {
-            color: #e74c3c;
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-        button {
-            background-color: #ffffff;
-            color: black;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-        }
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .price {
+        color: #e74c3c;
+        font-size: 1.5em;
+        margin: 10px 0;
+      }
+      button {
+        background-color: #ffffff;
+        color: black;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>AROMAS</h1>
-        <nav class="nav-container">
-            <button class="hamburger" onclick="toggleMenu()">☰</button>
-            <ul class="menu" id="menu">
-                <li>
-                    <a href="/views/index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="/views/ofertas.html">Ofertas</a>
-                    <ul class="submenu">
-                        <li><a href="/viewsPerfumes/nau-voy.html">Nautica Voyage</a></li>
-                        <li><a href="/viewsPerfumes/ver-cryst.html">Versace Bright Crystal</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/views/productosNuevos.html">Novedades</a>
-                    <ul class="submenu">
-                        <li><a href="/viewsPerfumes/myslf.html">YSL MYSELF</a></li>
-                        <li><a href="/viewsPerfumes/bvl-alle.html">Bvlgari Allegra Chill & Sole</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/views/damas.html">Damas</a>
-                    <ul class="submenu">
-                        <li><a href="/viewsPerfumes/kal-klein.html">Calvin Klein Beauty</a></li>
-                        <li><a href="/viewsPerfumes/miss-dior.html">Miss Dior</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/views/caballeros.html">Caballeros</a>
-                    <ul class="submenu">
-                        <li><a href="/viewsPerfumes/hawa-ice.html">Hawa ICE</a></li>
-                        <li><a href="/viewsPerfumes/str-with.html">Stronger With You Intensely</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="search">
-                        <form action="/views/construccion.html">
-                            <input type="text" placeholder="Buscar..." name="search">
-                            <button type="submit">Buscar</button>
-                        </form>
-                    </div> 
-                </li>
-                <li> 
-                    <button onclick="window.location.href='/views/Formulario.html';" class="btn btn-outline-dark">
-                        Registro
-                    </button>
-                </li>
-                <li> 
-                    <button onclick="window.location.href='/views/sesion.html';" class="btn btn-outline-dark">
-                        Iniciar Sesion
-                    </button>
-                </li>
+      <h1>AROMAS</h1>
+      <nav class="nav-container">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul class="menu" id="menu">
+          <li>
+            <a href="/views/index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="/views/ofertas.html">Ofertas</a>
+            <ul class="submenu">
+              <li><a href="/viewsPerfumes/nau-voy.html">Nautica Voyage</a></li>
+              <li>
+                <a href="/viewsPerfumes/ver-cryst.html"
+                  >Versace Bright Crystal</a
+                >
+              </li>
             </ul>
-        </nav>
-        
-        <div class="bread">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item active" aria-current="page"><a href="/views/index.html">Inicio</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"><a href="/views/ofertas.html">Inicio</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Hawas ICE</li>
-                </ol>
-            </nav>  
-        </div>
-             
+          </li>
+          <li>
+            <a href="/views/productosNuevos.html">Novedades</a>
+            <ul class="submenu">
+              <li><a href="/viewsPerfumes/myslf.html">YSL MYSELF</a></li>
+              <li>
+                <a href="/viewsPerfumes/bvl-alle.html"
+                  >Bvlgari Allegra Chill & Sole</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/views/damas.html">Damas</a>
+            <ul class="submenu">
+              <li>
+                <a href="/viewsPerfumes/kal-klein.html">Calvin Klein Beauty</a>
+              </li>
+              <li><a href="/viewsPerfumes/miss-dior.html">Miss Dior</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/views/caballeros.html">Caballeros</a>
+            <ul class="submenu">
+              <li><a href="/viewsPerfumes/hawa-ice.html">Hawa ICE</a></li>
+              <li>
+                <a href="/viewsPerfumes/str-with.html"
+                  >Stronger With You Intensely</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="search">
+              <form action="/views/construccion.html">
+                <input type="text" placeholder="Buscar..." name="search" />
+                <button type="submit">Buscar</button>
+              </form>
+            </div>
+          </li>
+          <li>
+            <button
+              onclick="window.location.href='/views/Formulario.html';"
+              class="btn btn-outline-dark"
+            >
+              Registro
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="window.location.href='/views/sesion.html';"
+              class="btn btn-outline-dark"
+            >
+              Iniciar Sesion
+            </button>
+          </li>
+        </ul>
+      </nav>
 
-        <script>
-            function toggleMenu() {
-                document.getElementById("menu").classList.toggle("active");
-            }
-        </script>
+      <div class="bread">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+              <a href="/views/index.html">Inicio</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <a href="/views/ofertas.html">Caballeros</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Hawas ICE
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <script>
+        function toggleMenu() {
+          document.getElementById("menu").classList.toggle("active");
+        }
+      </script>
     </header>
 
     <div class="container">
-        <img src="https://th.bing.com/th/id/OIP.lIkC47te0pFsKlxqGzpQHAHaJG?pid=ImgDet&w=180&h=180&c=7" alt="Hawas ICE">
-        <h2>Hawas ICE</h2>
-        <p class="price">$1,499.00 MXN</p>
-        <p>Rasasi Hawas Ice is a new fragrance for men launched in 2023 as a new flanker to the original Rasasi Hawas.</p>
-        <button><a href="/views/construccion.html">Agregar al Carrito</a></button>
+      <img
+        src="https://th.bing.com/th/id/OIP.lIkC47te0pFsKlxqGzpQHAHaJG?pid=ImgDet&w=180&h=180&c=7"
+        alt="Hawas ICE"
+      />
+      <h2>Hawas ICE</h2>
+      <p class="price">$1,499.00 MXN</p>
+      <p>
+        Rasasi Hawas Ice is a new fragrance for men launched in 2023 as a new
+        flanker to the original Rasasi Hawas.
+      </p>
+      <button><a href="/views/construccion.html">Agregar al Carrito</a></button>
     </div>
 
     <footer>
-        <!-- Caja de comentarios -->
+      <!-- Caja de comentarios -->
 
-        <div class="seccioncomentario">
+      <div class="seccioncomentario">
+        <h2 class="titulocomentario">Contáctenos</h2>
 
-            <h2 class="titulocomentario">Contáctenos</h2>
+        <br /><br />
 
-            <br><br>
+        <form class="nombrecomentario">
+          <h3 class="entcomentario">Nombre*</h3>
+          <div class="form-group">
+            <textarea class="form-control" rows="1"></textarea>
+          </div>
+        </form>
 
-            <form class="nombrecomentario">
-                <h3 class="entcomentario">Nombre*</h3>
-                <div class="form-group">
-                    <textarea class="form-control" rows="1"></textarea>
-                </div>
-            </form>
+        <br /><br />
 
-            <br><br>
+        <form class="nombrecomentario">
+          <h3 class="entcomentario">Correo electrónico*</h3>
+          <div class="form-group">
+            <textarea class="form-control" rows="1"></textarea>
+          </div>
+        </form>
 
-            <form class="nombrecomentario">
-                <h3 class="entcomentario">Correo electrónico*</h3>
-                <div class="form-group">
-                    <textarea class="form-control" rows="1"></textarea>
-                </div>
-            </form>
+        <br /><br />
 
-            <br><br>
+        <form class="cajacomentario">
+          <h3 class="entcomentario">Ingrese un comentario*</h3>
+          <div class="form-group">
+            <textarea class="form-control" rows="5"></textarea>
+          </div>
+          <br />
+          <button type="submit" class="btn btn-primary">
+            Enviar comentario
+          </button>
+        </form>
+      </div>
 
-            <form class="cajacomentario">
-                <h3 class="entcomentario">Ingrese un comentario*</h3>
-                <div class="form-group">
-                <textarea class="form-control" rows="5"></textarea>
-                </div>
-                <br>
-                <button type="submit" class="btn btn-primary">Enviar comentario</button>
-            </form>
+      <!-- Fin caja de comentarios -->
 
-        </div>
-
-    <!-- Fin caja de comentarios -->
-
-        <div class="footer">
+      <div class="footer">
         <div class="row">
+          <ul>
             <ul>
-                <ul>
-                    <li><a href="/viewsFooter/politica.html#contacto">Contacto</a></li>
-                    <li><a href="/viewsFooter/privacidad.html">Privacidad</a></li>
-                    <li><a href="/viewsFooter/politica.html">Politica de Empresa</a></li>
-                    <li><a href="/viewsFooter/terminos.html">Terminos y Condiciones</a></li>
-                    <li><a href="/viewsFooter/carrera.html">Carrera</a></li>
-                    <li><a href="/viewsFooter/menusitio.html">Menu de Sitio</a></li>
-                </ul>
+              <li>
+                <a href="/viewsFooter/politica.html#contacto">Contacto</a>
+              </li>
+              <li><a href="/viewsFooter/privacidad.html">Privacidad</a></li>
+              <li>
+                <a href="/viewsFooter/politica.html">Politica de Empresa</a>
+              </li>
+              <li>
+                <a href="/viewsFooter/terminos.html">Terminos y Condiciones</a>
+              </li>
+              <li><a href="/viewsFooter/carrera.html">Carrera</a></li>
+              <li><a href="/viewsFooter/menusitio.html">Menu de Sitio</a></li>
             </ul>
+          </ul>
         </div>
-            
+
         <div class="row">
-        AROMAS Copyright © 2025 AROMAS - All rights reserved || Designed By: Baruc 
+          AROMAS Copyright © 2025 AROMAS - All rights reserved || Designed By:
+          INGE
         </div>
-        </div>
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    
-    <!-- Script caja de comentarios -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Fin script caja de comentarios -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
 
-   </body>
+    <!-- Script caja de comentarios -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fin script caja de comentarios -->
+  </body>
 </html>
